@@ -73,6 +73,11 @@ img {
   padding: 10px 0px;
   animation: moverArriba 1s ease-in;
 }
+.icono {
+  display: block;
+  animation: moverIzquierda 1s ease-in;
+  z-index: 10000;
+}
 .weve {
   height: 100px;
   width: 100%;
@@ -80,6 +85,26 @@ img {
   background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
   background: linear-gradient(to right, #96c93d, #00b09b);
 }
+.enlaces {
+  position: fixed;
+  display: flex;
+  top: 0;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  left: 0;
+  width: 100%;
+  transition: all 1s ease;
+  background: cornsilk;
+}
+.uno {
+  clip-path: circle(0.9% at 0 0);
+}
+.dos {
+  clip-path: circle(140.9% at 0 0);
+}
+
 /* Animacion*/
 @keyframes moverIzquierda {
   0% {
