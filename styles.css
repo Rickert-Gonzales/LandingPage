@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*background: rgb(240, 243, 222);*/
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+}
+nav {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  animation: moverIzquierda 1s ease-in;
+}
+nav a {
+  color: beige;
+  text-decoration: none;
+  display: inline-block;
+}
+header {
+  background: #00b09b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #96c93d,
+    #00b09b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #96c93d,
+    #00b09b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container {
+  width: 95%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+img {
+  display: block;
+  height: 450px;
+  object-fit: cover;
+  width: auto;
+  animation: moverArriba 1s ease-in;
+}
+.textos {
+  width: 50%;
+  color: beige;
+}
+.textos h1 {
+  font-size: 80px;
+  animation: moverIzquierda 1s ease-in;
+}
+.textos h2 {
+  font-size: 30px;
+  animation: moverDerecha 1s ease-in;
+}
+.textos a {
+  display: inline-block;
+  color: beige;
+  font-weight: 300;
+  text-decoration: none;
+  margin-top: 30px;
+  border: 1px solid #fff;
+  width: 150px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px 0px;
+  animation: moverArriba 1s ease-in;
+}
+.weve {
+  height: 100px;
+  width: 100%;
+  background: #00b09b;
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+  background: linear-gradient(to right, #96c93d, #00b09b);
+}
+/* Animacion*/
+@keyframes moverIzquierda {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moverDerecha {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moverArriba {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
